@@ -10,18 +10,25 @@ h5,
 h4,
 h6 {
     text-align: center;
-    color:#853737;
+    color:#79502B;
 }
 
 a {
     text-decoration: none;
 }
-
+.font-alt a{
+    color: #9ACE60;
+}
+.font-alt a:hover{
+    
+    text-decoration: underline;
+}
 .font-alt {
     
     text-align: center;
     align-content: center;
 }
+
 
 /*==================
 =    HEAD SECTION  =
@@ -29,18 +36,24 @@ a {
 
 header {
     width: 100%;
-    height: 500px;
+    height: 720px;
     overflow: visible;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url('../images/grassFull/grass-pic-1.jpg');
+    background-image: url('../images/grassFull/grass-pic-10.jpg');
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-
+    
 }
 
+.image-heading img{
 
+    padding: 100px 15px 0 15px;
+    text-align: center;
+    justify-content: center;
+
+}
 /*==================
 = END HEAD SECTION =
 ==================*/
@@ -52,8 +65,7 @@ header {
 
 .nav-container {
     background-color: #ffffff;
-    opacity: 0.9;
-    
+    opacity: 0.8;
 }
  
 
@@ -78,21 +90,21 @@ header {
 }
 
 nav .navbar-nav li a {
-    color: #be2323 !important;
+    color: #9ACE60 !important;
 }
 
 nav .navbar-nav li a:hover {
-    color: #853737 !important;
+    color: #79502B !important;
     font-weight: 700;
 }
 
 .dropdown-menu .dropdown-item {
-    color: #244931 !important;
+    color: #9ACE60 !important;
     font-weight: 700;
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #232e23 !important;
+    background-color: #79502B !important;
     color: #ffffff !important;
 }
 
@@ -115,16 +127,18 @@ nav .navbar-nav li a:hover {
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin : 20px;
+    margin-bottom: 15px;
+    padding: 10px;
 }
 
 
 .alt-services-image img {
+    position: relative;
     width: 100%;
-    height: 250px;
+    height: auto;
     border: none;
-    border-radius: 3px;
-    margin: 15px 0 15px 0;
+    border-radius: 10px;
+    margin: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .alt-service-text{
@@ -136,18 +150,18 @@ nav .navbar-nav li a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    height:100%;
+    height:250px;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: #38832e;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
-.alt-services-image:hover .overlay {
+.alt-services-image:hover {
     
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .text {
@@ -171,15 +185,15 @@ nav .navbar-nav li a:hover {
 }
 
 .alt-services-title {
-    color: #07572f;
+    color: #9ACE60;
     font-size: 60px;
     text-align: center;
     margin-top: 65px;
 }
 
 alt-services-title:hover {
-    color: #853737;
-    text-decoration: none;
+    color: #79502B;
+    text-decoration: underline;
 }
 
 
@@ -214,7 +228,7 @@ alt-services-title:hover {
     position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
     height: 0;
-    margin-top: 5px;
+    margin: 10px 0 10px 0;
     border-radius: 10px;
     background-color: transparent;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
@@ -230,7 +244,7 @@ alt-services-title:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
     font-size: 18px;
     font-weight: 700;
-    color: #07572f;
+    color: #9ACE60;
 }
 
 .post-prev-img img {
@@ -244,24 +258,30 @@ alt-services-title:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
     font-size: 18px;
     font-weight: 700;
-    color: #07572f;
+    color: #9ACE60;
 }
 
 .post-prev-img a:hover {
+    
     opacity: 0.5;
-    filter: alpha(opacity=50);
+    filter: alpha(opacity=70);
+    transition: .5s linear;
 }
 
 .post-news-title a {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 700;
-    color: #07572f;
+    color: #9ACE60;
+    margin: 10px 0 10px 0;
+
 }
 
 .post-news-title a:hover {
-    color: rgb(133, 55, 55);
+   
 }
-
+.post-prev-text{
+    margin: 20px 0 10px 0;
+}
 
 /*======================
 =   END NEWS SECTION   =
@@ -292,19 +312,33 @@ alt-services-title:hover {
 }
 .alt-contact-text{
     text-align: center;
+    font-size: 1.2rem;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height:100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #38832e;
-    border-radius: 3px;
+.alt-contact-label .font-alt{
+    color: rgb(56, 55, 55);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.alt-contact-num{
+    text-align: center;
+}
+.alt-contact-num a{
+    text-align: center;
+    text-decoration: none;
+    color: #2047c5;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.alt-contact-mail{
+    text-align: center;
+}
+.alt-contact-mail a{
+    color: #2047c5;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-decoration: underline;
+
 }
 
 .alt-contact-image:hover .overlay {
@@ -333,40 +367,62 @@ alt-services-title:hover {
  }
 
 .alt-contact-title {
-    color: #07572f;
-    font-size: 30px;
+    color:#79502B ;
+    font-size: 45px;
     text-align: center;
     margin-top: 65px;
+    
 }
 
 alt-contact-title:hover {
-    color: #853737;
+    
     text-decoration: none;
 }
+.alt-contact-subtitle{
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-decoration: none;
+}
+/*==============
+= FORM SECTION =
+==============*/
+.alt-form-item{
 
+}
+
+.alt-form-body{
+
+
+}
+.alt-form-sub{
+    
+    font-weight: 400;
+    font-size: 1.1rem;
+    
+}
 .btn-style {
-    background-color: #0b410b;
+    background-color: #9ACE60;
     border: none;
     border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
     width: 100%;
     height: 40px;
     color: #ffffff;
 }
 
 .btn-style:hover {
-    background-color: rgb(133, 55, 55);
+    background-color: #79502B;
     color: #ffffff;
 }
 
-.btn-sty-2 {
-    background-color: #2a2a2f;
-    color: #ffffff;
-}
 
-.btn-sty-2:hover {
-    background-color: rgb(133, 55, 55);
-    color: #ffffff;
-}
+
+
+/*==================
+= END FORM SECTION =
+==================*/
+
 
 /*======================
 = END CONTACT SECTION =

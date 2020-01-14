@@ -49,7 +49,7 @@ header {
 
 .image-heading img{
 
-    padding: 100px 15px 0 15px;
+    padding: 200px 15px 0 15px;
     text-align: center;
     justify-content: center;
 
@@ -234,9 +234,13 @@ alt-services-title:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 
 }
+
+/*==========
+=    MAP   =
+==========*/
 .post-prev-img iframe{
     position: absolute;
-    border-radius: 10px;
+    border-radius: 20px;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -246,6 +250,16 @@ alt-services-title:hover {
     font-weight: 700;
     color: #9ACE60;
 }
+.widget-map{
+    
+    border-radius: 10px;
+    overflow:hidden;
+    width: 100%;
+    position: relative;
+}
+/*==========
+= END  MAP =
+==========*/
 
 .post-prev-img img {
     
@@ -318,12 +332,19 @@ alt-services-title:hover {
     color: rgb(56, 55, 55);
     font-weight: 700;
     font-size: 1.5rem;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .alt-contact-num{
     text-align: center;
 }
 .alt-contact-num a{
+    text-align: center;
+    text-decoration: underline;
+    color: #2047c5;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.alt-contact-num a:hover{
     text-align: center;
     text-decoration: none;
     color: #2047c5;
@@ -374,7 +395,7 @@ alt-services-title:hover {
     
 }
 
-alt-contact-title:hover {
+.alt-contact-title:hover {
     
     text-decoration: none;
 }
@@ -416,7 +437,10 @@ alt-contact-title:hover {
     color: #ffffff;
 }
 
-
+.error-style{
+    color: #c72323;
+    font-size: 0.8rem;
+}
 
 
 /*==================
@@ -434,15 +458,11 @@ alt-contact-title:hover {
 =  FOOTER SECTION   =
 ===================*/
 
-.footer-area {
-    position: relative;
-    font-weight: 400;
-    font-size: 15px;
-    background-color: #ffffff;
-    color: #853737;
-    opacity: 0.8;
-}
 
+.alt-footer-logo{
+    width: 50%;
+    height: auto;
+}
 .footer-widget-menu {
     padding: 0;
     margin: 0;
@@ -463,7 +483,13 @@ a:focus {
 }
 
 .footer-big {
-    padding: 105px 0 65px 0
+    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #853737;
+    opacity: 0.8;
+    padding: 50px 0 0 0;
 }
 
 .footer-big .footer-widget {
@@ -471,7 +497,7 @@ a:focus {
 }
 
 .footer--light {
-    background: #e7e8ed;
+    background: #e4e8fd;
 }
 
 .footer-big .footer-menu ul li a,
@@ -481,7 +507,8 @@ a:focus {
 }
 
 .footer-menu {
-    padding-left: 48px
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .footer-menu ul li a {
@@ -496,23 +523,40 @@ a:focus {
     color: rgb(133, 55, 55);
 }
 
-.footer-menu--1 {
-    width: 100%
-}
-
-.footer-widget-title {
-    line-height: 42px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-decoration: underline;
+.footer-widget-title a{
+    line-height: 10px;
+    font-size: 15px;
     color: #853737;
 }
+.alt-footer-subtitle{
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.alt-footer-label .font-alt{
+    font-size: 20px;
+    color: #000000;
+}
+.alt-footer-num a{
+    text-decoration: underline;
+    font-size: 20px;
+    color: #2047c5;
 
-.widget-map{
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.alt-footer-num a:hover{
+    text-decoration: none;
+    font-size: 20px;
+    
 
+}
+.alt-footer-mail a{
+    text-decoration: underline;
+    font-size: 20px;
+    color: #2047c5;
+}
+.alt-footer-mail a:hover{
+    text-decoration: none;
+    font-size: 20px;
+   
 }
 .widget-about img {
 
@@ -545,20 +589,6 @@ a:focus {
 }
 
 
-/*==========
-   =    MAP   =
-   ==========*/
-
-
-
-
-/*==========
-   = END  MAP =
-   ==========*/
-
-.icon-envelope-open {
-    color: #ffffff;
-}
 
 .mini-footer {
     background: #ffffff;
@@ -582,6 +612,7 @@ a:focus {
     color: #f55104;
 }
 .footer-copyright a{
+    bottom: 0;
     color: #99CF63;
 }
 

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>GreenConcept</title>
 </head>
 
@@ -15,13 +15,13 @@
     <!--HEAD Section-->
     <header>
         <div class="image-heading">
-            <img src="images/greenConcept-logo.png" class="img-fluid" alt="">
+            <img src="/images/greenConcept-logo.png" class="img-fluid" alt="">
         </div>
         <!--NAV Section-->
         <nav class="navbar navbar-expand-lg nav-container fixed-top navbar-light bg-light">
             <div class="nav-logo-wrap">
                 <a class="navbar-brand" href="index.php">
-                    <img src="images/greenConcept-logo.png" alt="" class="logo">
+                    <img src="/images/greenConcept-logo.png" alt="" class="logo">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -37,7 +37,7 @@
                             Production
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Gazon</a>
+                            <a class="dropdown-item" href="grass-page.html">Gazon</a>
                             <a class="dropdown-item" href="#">Agriculture</a>
                         </div>
                     </li>
@@ -69,12 +69,12 @@
                 <div class="col-md-6">
                     <div class="alt-service-item">
                         
-                            <h4 class="alt-services-title font-alt mt-3 mb-3"><a href="#">Gazon</a></h4>
+                            <h4 class="alt-services-title font-alt mt-3 mb-3"><a href="grass-page.html">Gazon</a></h4>
                         
                         <div class="align-center">
                             <div class="alt-services-image">
-                                <a href="https://www.freepik.com/free-photos-vectors/nature">
-                                    <img class="img-fluid" src="images/grassFull/grass-pic-3.jpg">
+                                <a href="grass-page.html">
+                                    <img class="img-fluid" src="/images/grassFull/grass-pic-3.jpg">
                                 </a>
 
 
@@ -97,7 +97,7 @@
                         <div class=" align-center">
                             <div class="alt-services-image">
                                 <a href="#">
-                                    <img class="img-fluid" src="images/vegeFull/salad-pic-1.jpg">
+                                    <img class="img-fluid" src="/images/vegeFull/salad-pic-1.jpg">
                                 </a>
                             </div>
                         </div>
@@ -138,7 +138,7 @@
                     </div>
                     <div class="post-prev-img">
                         <a href="https://www.sima-sipsa.com/Exposants/L-agriculture-en-Algerie" target="_blank">
-                            <img src="images/vegeFull/mixed-pic-5.jpg" alt="" class="img-fluid" >
+                            <img src="/images/vegeFull/mixed-pic-5.jpg" alt="" class="img-fluid" >
                         </a>
                     </div>
                     
@@ -150,11 +150,11 @@
                 <!--POST Item-->
                 <div class="alt-project-item col-md-4 ">
                     <div class="post-news-title text-center font-alt pt-2">
-                        <a href="https://www.facebook.com/SarlLUniversAgricole/" target="_blank">Nos partenaires</a>
+                        <a href="https://www.facebook.com/SarlLUniversAgricole/" target="_blank">Nos  partenaires</a>
                     </div>
                     <div class="post-prev-img">
                         <a href="https://www.facebook.com/SarlLUniversAgricole/" target="_blank">
-                            <img src="images/partenaire-pic-2.jpg" alt="" class="img-fluid">
+                            <img src="/images/partenaire-pic-2.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     
@@ -236,7 +236,7 @@
 
 
                             <!--MAP-->
-                            <div style="" class="widget-map mt-3">
+                            <div class="widget-map mt-3">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d824675.5570252632!2d1.515336699416703!3d36.15709008217593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128435643b3c9d4b%3A0xd47ac96994933bdd!2sWilaya%20de%20A%C3%AFn%20Defla%2C%20Alg%C3%A9rie!5e0!3m2!1sfr!2sfr!4v1578668499174!5m2!1sfr!2sfr"
                                     width="400" height="300" frameborder="0" style="border:0;"
@@ -269,7 +269,7 @@
 
                     <!--modal-->
                     <div class="modal-body alt-form-item">
-                        <form method="post" action="" class="alt-form-body" name="myform">
+                        <form method="POST" action="/inbox" class="alt-form-body" name="myform">
                             <label for="name"  class="alt-form-sub mt-2">Votre nom:</label>
                             <input type="text" class="form-control" name="name" placeholder="Nom Prénom" >
                             <span class="error hide error-style"></span><br>
@@ -279,11 +279,11 @@
                             <label for="email" class="alt-form-sub mt-2">Votre adresse mail Email:</label>
                             <input type="email" class="form-control" name="email" placeholder="exemple@mail.com">
                             <span class="error hide error-style"></span><br>
-                            <label for="messagecontact" class="alt-form-sub mt-2">Votre message:</label>
+                            <label for="message" class="alt-form-sub mt-2">Votre message:</label>
                             <textarea type="text" name="message" class="form-control" rows="5"
                                 placeholder="Ecrivez votre message ici..."></textarea>
                             <br>
-                            <input type="submit" name="Sign up" value="Envoyer" class="btn-style ">
+                            <input type="submit" name="Sign up" value="Envoyer" class="btn-style " >
                         </form>
                     </div>
 
@@ -305,7 +305,7 @@
                 <!-- Grid Footer column -->
                 <div class="col-md-3 ">
                     <div class="footer-menu ">
-                            <img src="images/greenConcept-logo.png" class="alt-footer-logo img-fluid" alt="">
+                            <img src="/images/greenConcept-logo.png" class="alt-footer-logo img-fluid" alt="">
                     </div>
                 </div>
                 <!-- End Grid Footer column -->
@@ -315,7 +315,7 @@
                         <h5 class="footer-widget-title">Production</h5>
                         <ul class="footer-widget-menu">
                             <li>
-                                <a href="">Gazon</a>
+                                <a href="grass-page.html">Gazon</a>
                             </li>
                             <li>
                                 <a href="#">Agriculture</a>
@@ -374,7 +374,7 @@
 
 
 
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

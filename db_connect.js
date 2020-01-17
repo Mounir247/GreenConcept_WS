@@ -5,10 +5,10 @@ var mysql = require('mysql');
 
 let con = mysql.createConnection({
     host: "localhost",
-    port: "3306",
+    port: "3308",
     user: "root",
-    password: "123456",
-    database: ""
+    password: "",
+    database: "greenconcept"
   });
-  
+
   module.exports.con = con;
